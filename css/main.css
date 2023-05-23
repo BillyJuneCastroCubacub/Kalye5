@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --brown: #bd8450;
+}
+body{
+    font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary{
+    background-color: var(--brown)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fdfcfc;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--brown);
+    color: #fff;
+    border-color: var(--brown);
+}
+
+/* text color */
+.text-primary{
+    color: var(--brown)!important;
+}
+
+/* navbar */
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 90px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--brown)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* header */
+#header{
+    background: url(../images/backk.jpg) top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 75px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+}
+.carousel-item .btn:hover{
+    border-color: var(--brown)!important;
+}
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--brown);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn{
+    background-color: var(--brown)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+    font-size: 24px;
+}
+.filter-button-group .btn:hover{
+    color: rgb(80, 47, 9)!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.collection {
+    position: relative;
+    width: auto;
+}
+
+.collection-img{
+    display: block;
+    width: 100%;
+}
+.collection__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.06);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.collection__overlay--blur{
+    backdrop-filter: blur(5px);
+}
+.collection__overlay > * {
+    transform: translateY(20px);
+    transition: 0.25s;
+}
+
+.collection__overlay:hover{
+    opacity: 1;
+}
+.collection__overlay:hover > * {
+    transform: translateY(0);
+
+}
+.collection__title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.image__description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+/* special */
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/* offers */
+#offers{
+    background: url(../images/backkk.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
+
+/* about */
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* newsletter */
+#newsletter{
+    background-color: rgba(177, 123, 23, 0.05);
+}
+#newsletter p{
+    max-width: 600px;
+}
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background-color: var(--brown);
+    color: #fff;
+    border-color: var(--brown);
+}
+#newsletter .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--brown)!important;
+}
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
+/* discount */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+.cow{
+    height: 50vh;
+    font-family: Arial, Helvetica, sans-serif;
+    place-items: center;
+}
+.cow h1{
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 1rem;
+}
+
+input,select,textarea {
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid goldenrod;
+    width: auto;
+}
+
+textarea{
+    height: 6rem;
+    width: auto;
+}
+.hype{
+    width: 10%;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: goldenrod;
+    color: black;
+    border-radius: 20px;
+}
+
+.border {
+    border-top-width: 5px;
+    border-right-width: 1px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+  }
+  
+  
+  .img-fluid {
+    width: 200px;
+    height: 150px;
+  }
+
+
+
+  .customer-review {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.customer-review .review-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.customer-review .review-card .review-text {
+    font-size: 18px;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.customer-review .review-card .review-author {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.customer-review .review-card .review-rating {
+    color: #ffc107;
+    margin-top: 10px;
+}
+  

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Offers</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-6 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="images/logo.png" alt="site icon">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="index.html" style="font-size:20px;">Home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="menu_meat.html"
+                            style="font-size:20px;">Menu</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="special.html" style="font-size:20px;">Special
+                            Offer</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="popular.html" style="font-size:20px;">Popular
+                            Offer</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="costumer.html"
+                            style="font-size:20px;">Reviews</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="about.html" style="font-size:20px;">About</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="contact.html"
+                            style="font-size:20px;">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <br><br><br><br>
+    <!-- collection -->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block" style="font-size:60px;">POPULAR OFFER THIS MONTH!</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".best">Best Sellers</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".feat">Featured</button>
+                </div>
+
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best  border">
+                        <div class="collection-img position-relative ">
+                            <img src="images/444.jpeg" class=" img-fluid w-100">
+                            <div class="collection__overlay collection__overlay--blur">
+                                <div class="collection__title">Lorem Ipsum</div>
+                                <p class="collection__description">
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">May</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lorem Ipsum</p>
+                            <span class="fw-bold"> 900 Php </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat  border">
+                        <div class="collection-img position-relative ">
+                            <img src="images/3(1).jpeg" class=" img-fluid w-100">
+                            <div class="collection__overlay collection__overlay--blur">
+                                <div class="collection__title">Lorem Ipsum</div>
+                                <p class="collection__description">
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">May</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lorem Ipsum</p>
+                            <span class="fw-bold">300 Php</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new  border">
+                        <div class="collection-img position-relative ">
+                            <img src="images/p(1).jpeg" class=" img-fluid w-100">
+                            <div class="collection__overlay collection__overlay--blur">
+                                <div class="collection__title">Lorem Ipsum</div>
+                                <p class="collection__description">
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">May</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lorem Ipsum</p>
+                            <span class="fw-bold">250 Php</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best  border">
+                        <div class="collection-img position-relative ">
+                            <img src="images/bbb.jpeg" class=" img-fluid w-100">
+                            <div class="collection__overlay collection__overlay--blur">
+                                <div class="collection__title">Lorem Ipsum</div>
+                                <p class="collection__description">
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">May</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lorem Ipsum</p>
+                            <span class="fw-bold">800 Php</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat  border">
+                        <div class="collection-img position-relative ">
+                            <img src="images/kk.jpeg" class=" img-fluid w-100">
+                            <div class="collection__overlay collection__overlay--blur">
+                                <div class="collection__title">Lorem Ipsum</div>
+                                <p class="collection__description">
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">May</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lorem Ipsum</p>
+                            <span class="fw-bold">350 Php</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 new  border">
+                        <div class="collection-img position-relative ">
+                            <img src="images/e.jpeg" class=" img-fluid w-100">
+                            <div class="collection__overlay collection__overlay--blur">
+                                <div class="collection__title">Lorem Ipsum</div>
+                                <p class="collection__description">
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">May</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lorem Ipsum</p>
+                            <span class="fw-bold">1,500 Php</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 best  border">
+                        <div class="collection-img position-relative ">
+                            <img src="images/iii.jpeg" class=" img-fluid w-100">
+                            <div class="collection__overlay collection__overlay--blur">
+                                <div class="collection__title">Lorem Ipsum</div>
+                                <p class="collection__description">
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">May</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lorem Ipsum</p>
+                            <span class="fw-bold">600 Php</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat  border">
+                        <div class="collection-img position-relative ">
+                            <img src="images/ppp.jpeg" class=" img-fluid w-100">
+                            <div class="collection__overlay collection__overlay--blur">
+                                <div class="collection__title">Lorem Ipsum</div>
+                                <p class="collection__description">
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">May</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lorem Ipsum</p>
+                            <span class="fw-bold">1,000 Pphp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+    <br><br><br>
+    <!-- footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <a href="#" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                </li>
+            </ul>
+            <p class="mb-0 mt-2">© 2023 Kalye Singko. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
